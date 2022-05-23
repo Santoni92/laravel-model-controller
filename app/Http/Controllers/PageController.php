@@ -14,7 +14,9 @@ class PageController extends Controller
         $movies = Movie::all();
         /*@dump($movies);
         @die();*/
-        dd($movies);
-        //return view('home',compact('movies'));
+
+        //dd($movies); è una shorthand
+
+        return view('home',compact('movies'));
     }
 }
